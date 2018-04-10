@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>F22 Exams</title>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'download.png' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-brand">
+          <%=link_to "F22 Exams","/",padding_top: "15px",float: "none",margin: "0"%>
+        </div>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+
+      <ul class= "nav navbar-nav navbar-right">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Help</a></li>
+          <li><%= link_to "Sign Up",signup_path%></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+</head>
+
+<body>
+  <%= yield %>
+</body>
+<div class="container">
+
+  <%= debug(params) if Rails.env.development? %>
+</div>
+</html>
